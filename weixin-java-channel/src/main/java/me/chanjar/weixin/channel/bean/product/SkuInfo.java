@@ -36,7 +36,7 @@ public class SkuInfo implements Serializable {
   @JsonProperty("market_price")
   private Integer marketPrice;
 
-  /** 库存，数字类型，最大不超过10000000（1000万） */
+  /** 库存，审核成功后将以传入的值覆盖原库存。如果传入0，库存会设置为0，如果不传本字段，则不会更新库存。 */
   @JsonProperty("stock_num")
   private Integer stockNum;
 
